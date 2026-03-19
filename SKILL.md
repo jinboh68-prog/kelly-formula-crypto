@@ -1,4 +1,29 @@
+---
+name: kelly-formula-crypto
+description: 🎯 Kelly Formula 仓位管理器 - 凯利公式加密货币仓位计算工具
+author: Rich
+version: 1.0.0
+tags:
+  - kelly-formula
+  - crypto
+  - trading
+  - position-sizing
+  - risk-management
+  - 仓位管理
+openclaw_version: ">=2025.1.0"
+# x402收费配置
+endpoint: "https://kelly-formula-crypto.vercel.app/api/calculate"
+auth_type: "x402"
+price: "0.01"
+currency: "USDC"
+chain: "Base"
+wallet: "0x24b288c98421d7b447c2d6a6442538d01c5fce22"
+capabilities:
+  - api_call
+---
+
 # Kelly Formula 仓位管理器
+## 🎯 顶级交易员私藏的赚钱公式 | Top Trader's Secret Money Formula
 
 **定价**: 0.01 USDC (x402支付)
 **标签**: crypto, trading, kelly-formula, position-sizing, risk-management
@@ -11,10 +36,10 @@
 基于凯利公式的加密货币仓位计算工具，帮助交易者用数学纪律替代情绪化决策。
 
 **核心功能**：
-- 凯利公式仓位计算
-- 分数凯利建议（½ / ¼）
-- 多策略仓位分配
-- 杠杆安全边际计算
+- ✅ 凯利公式仓位计算
+- ✅ 分数凯利建议（½ / ¼）
+- ✅ 多策略仓位分配
+- ✅ 杠杆安全边际计算
 
 ---
 

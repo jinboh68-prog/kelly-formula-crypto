@@ -1,9 +1,11 @@
 # Kelly Formula Crypto - 凯利公式仓位管理器
+## 🎯 顶级交易员私藏的赚钱公式 | Top Trader's Secret Money Formula
 
 <div align="center">
 
 **AI加密交易的仓位管理工具**
 
+版本: **1.0.0**
 定价: **0.01 USDC** (x402支付)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
