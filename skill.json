@@ -1,0 +1,17 @@
+{
+  "name": "kelly-formula-crypto-api",
+  "version": "1.0.0",
+  "description": "Kelly Formula 凯利公式仓位计算 API - x402付费版本",
+  "main": "api.py",
+  "url": "https://kelly-formula-crypto.vercel.app",
+  "scripts": {
+    "start": "python api.py"
+  },
+  "dependencies": ["fastapi", "uvicorn"],
+  "price": "0.01 USDC",
+  "payment": {
+    "currency": "USDC",
+    "chain": "Base",
+    "recipient": "0x24b288c98421d7b447c2d6a6442538d01c5fce22"
+  }
+}
