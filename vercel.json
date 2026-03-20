@@ -1,5 +1,4 @@
 {
-  "routes": [
-    { "src": "/(.*)", "dest": "/api.py" }
-  ]
+  "framework": "flask",
+  "buildCommand": "pip install flask"
 }

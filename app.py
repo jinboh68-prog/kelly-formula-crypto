@@ -1,8 +1,4 @@
-"""
-Simple Flask API - Kelly Formula
-"""
 from flask import Flask, jsonify, request
-from datetime import datetime
 
 app = Flask(__name__)
 
@@ -15,15 +11,12 @@ def kelly(p, b, f=0.5):
 
 @app.route('/')
 def index():
-    return jsonify({"msg": "Kelly Formula API", "usage": "/calc?p=0.55&win=5&loss=3", "payment": PAYMENT})
+    return jsonify({"msg": "Kelly Formula API", "usage": "/?p=0.55&win=5&loss=3", "payment": PAYMENT})
 
-@app.route('/calc')
-def calc():
+@app.route('/<path:unused>', methods=['GET', 'POST'])
+def catch_all(unused):
     p = request.args.get('p', type=float)
     w = request.args.get('win', type=float)
     l = request.args.get('loss', type=float)
     if not all([p,w,l]): return jsonify({"error": "need p, win, loss"})
     return jsonify({"p":p,"win":w,"loss":l,"kelly": round(kelly(p,w/l),2), "payment": PAYMENT})
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0',port=8000)
