@@ -1,0 +1,7 @@
+name = "kelly-formula"
+main = "api.js"
+compatibility_date = "2023-12-01"
+
+[[kv_namespaces]]
+binding = "PAYMENTS"
+id = ""
